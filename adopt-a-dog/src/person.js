@@ -1,24 +1,23 @@
 var Dog = require("./dog.js");
 
 class Person {
-  constructor(personName, personDog) {
-    this.name = personName;
-    this.dog = personDog;
+  constructor(name, dogObject) {
+    this.name = name; 
+    this.dog = dogObject;
   }
   fillFoodBowl() {
-    this.dog.hungry = false;
+    this.dog.eat();
   }
   throwBall() {
     this.dog.fetchBall();
-    return `${this.dog.name} loves playing fetch!`;
+    return `${this.dog.name} loves playing fetch!`
   }
-  introduceNewFriends(newFriend) {
-    this.dog.friends.push(newFriend.name);
+  introduceNewFriends(dogObject) {
+    this.dog.makeNewFriend(dogObject)
   }
-  adoptAPup(pupName, pupAge) {
+  adoptAPup(pupName, pupAge){
     if(this.dog === undefined) {
-      var adoptPup = new Dog({name: pupName, age: pupAge});
-      this.dog = adoptPup;
+      this.dog = new Dog({name: pupName , age: pupAge})
     } else {
       return `You can\'t adopt ${pupName}. You already have ${this.dog.name}!`
     }

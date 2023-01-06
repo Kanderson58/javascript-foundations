@@ -10,27 +10,27 @@ class Dog {
     if(this.hungry) {
       this.hungry = false;
       return "Yum!";
-    } else {
-      return "I refuse to eat.";
+    } else if (!this.hungry) {
+      return "I refuse to eat."
     }
   }
   fetchBall() {
     if(this.energyLevel > 3) {
-      this.energyLevel--;
-      return "This is fun!";
+      this.energyLevel--
+      return 'This is fun!'
     } else {
-      return "Nah, I\'m going to sleep instead.";
+      return 'Nah, I\'m going to sleep instead.'
     }
   }
-  sleep() {
+  sleep(){
     if(this.energyLevel < 10) {
-      this.energyLevel++;
+      this.energyLevel++
     } else {
-      return "I have too much energy to rest. I\'m going to chew something instead.";
+      return 'I have too much energy to rest. I\'m going to chew something instead.'
     }
   }
-  makeNewFriend(newFriend) {
-    this.friends.push(newFriend.name);
+  makeNewFriend(dogObject) {
+    this.friends.push(dogObject.name)
   }
 }
 
