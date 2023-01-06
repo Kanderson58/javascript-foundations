@@ -44,7 +44,7 @@ Completing all of these test suites is not necessary, but you should be working 
 - [X] 🎃 [Trick or Treat](./trick-or-treat)
 - [X] 🛹 [Skate Park](./skate-park)
 - [X] 🐶 [Adopt a Dog](./adopt-a-dog)
-- [ ] 👩‍🍳 [Recipes](./recipes)
+- [X] 👩‍🍳 [Recipes](./recipes)
 - [ ] 🍫 [Vending Machine](./vending-machine)
 
 ### Other Greats
